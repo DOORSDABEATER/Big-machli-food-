@@ -16,9 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Extract source
+      - name: Extract fixed source
         run: |
-          unzip -o des-sea-levi-plugin-files.zip -d .
+          unzip -o des-sea-levi-plugin-files-fixed.zip -d .
           test -f des-sea/build.gradle.kts
 
       - uses: actions/setup-java@v5
